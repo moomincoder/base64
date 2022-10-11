@@ -1,4 +1,4 @@
-use crate::alphabet::{Alphabet, Classic};
+use crate::alphabet::{Alphabet};
 use std::iter::FromIterator;
 
 fn split(chunk: &[u8]) -> Vec<u8> {

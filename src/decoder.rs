@@ -1,10 +1,10 @@
-use crate::alphabet::{Alphabet, Classic};
+use crate::alphabet::{Alphabet};
 use std::io;
 
-pub fn decode(bytes: &String) -> Result<Vec<u8>, io::Error> {
-    let alphabet = Classic {};
-    decode_using_alphabet(alphabet, bytes)
-}
+// pub fn decode(bytes: &String) -> Result<Vec<u8>, io::Error> {
+//     let alphabet = Classic {};
+//     decode_using_alphabet(alphabet, bytes)
+// }
 
 pub fn decode_using_alphabet<T: Alphabet>(alphabet: T, data: &String) -> Result<Vec<u8>, io::Error> {
     // if data is not multiple of four bytes, data is invalid
